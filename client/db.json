@@ -45,15 +45,15 @@
       "mileage": 113781
     },
     {
-      "year": "1992",
-      "make": "Acura",
-      "model": "TL",
-      "submodel": "",
-      "drive": "FWD",
+      "year": "2015",
+      "make": "Dodge",
+      "model": "Ram",
+      "submodel": "1500",
+      "drive": "4WD",
       "transmission": "Automatic",
-      "fuel": "Gasoline",
-      "mileage": "34434",
-      "id": 5
+      "fuel": "Gasonline",
+      "mileage": "78855",
+      "id": 6
     }
   ]
 }
