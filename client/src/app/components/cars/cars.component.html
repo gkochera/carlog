@@ -1,1 +1,1 @@
-<app-single-car *ngFor="let car of cars" [car]="car"></app-single-car>
+<app-single-car *ngFor="let car of cars" [car]="car" (onDeleteCar)="deleteCar(car)"></app-single-car>

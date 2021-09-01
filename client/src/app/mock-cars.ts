@@ -33,5 +33,5 @@ export const CARS: Car[] = [
         transmission: 'Automatic',
         fuel: 'Gasoline',
         mileage: 101254
-    },
+    }
 ]
