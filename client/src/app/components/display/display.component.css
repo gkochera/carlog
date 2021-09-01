@@ -1,0 +1,21 @@
+.display {
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.digits {
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+p {
+    display: block;
+    padding-right: 20px;
+    font-size: 3em;
+}

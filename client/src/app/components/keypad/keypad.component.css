@@ -1,0 +1,11 @@
+.keypad {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+button {
+    flex: 1 0 21%;
+    height: 40px;
+}
