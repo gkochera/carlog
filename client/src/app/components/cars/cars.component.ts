@@ -23,4 +23,8 @@ export class CarsComponent implements OnInit {
     .subscribe(() => this.cars = this.cars.filter(c => c.id !== car.id))
   }
 
+  addCar(car: Car) {
+    this.carSerivce.addCar(car).subscribe((cars) => this.cars.push(car))
+  }
+
 }

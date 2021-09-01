@@ -1,1 +1,6 @@
-<app-single-car *ngFor="let car of cars" [car]="car" (onDeleteCar)="deleteCar(car)"></app-single-car>
+<app-add-car (onAddCar)="addCar($event)"></app-add-car>
+<app-single-car 
+    *ngFor="let car of cars" 
+    [car]="car" 
+    (onDeleteCar)="deleteCar(car)"
+></app-single-car>
