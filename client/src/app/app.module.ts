@@ -13,10 +13,13 @@ import { AddCarComponent } from './components/add-car/add-car.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PartsComponent } from './components/parts/parts.component';
+import { PartsDisplayComponent } from './components/parts-display/parts-display.component';
 
 const appRoutes: Routes = [
   {path: '', component: CarsComponent},
-  {path: 'about', component: AboutComponent}
+  {path: 'about', component: AboutComponent},
+  {path: 'parts', component: PartsComponent}
 ]
 
 @NgModule({
@@ -28,7 +31,9 @@ const appRoutes: Routes = [
     AddCarComponent,
     AboutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PartsComponent,
+    PartsDisplayComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Car } from '../Car'
-import { CARS } from '../mock-cars'
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({

@@ -55,5 +55,16 @@
       "mileage": "155468",
       "id": 7
     }
+  ],
+  "parts": [
+    {
+      "id": 1,
+      "manufacturer": "AC Delco",
+      "partNumber": "1P-944",
+      "cost": 1348,
+      "datePurchased": "September 2, 2021",
+      "description": "Oil Filter",
+      "notes": "Extra Long"
+    }
   ]
 }
