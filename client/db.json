@@ -12,17 +12,6 @@
       "mileage": "256175"
     },
     {
-      "id": 2,
-      "year": 1994,
-      "make": "Pontiac",
-      "model": "Firebird",
-      "submodel": "Trans Am GT",
-      "drive": "RWD",
-      "transmission": "Manual",
-      "fuel": "Gasoline",
-      "mileage": 155467
-    },
-    {
       "id": 3,
       "year": 2014,
       "make": "Jeep",
@@ -54,6 +43,17 @@
       "fuel": "Gasonline",
       "mileage": 78855,
       "id": 6
+    },
+    {
+      "year": "1994",
+      "make": "Pontiac",
+      "model": "Firebird",
+      "submodel": "Trans Am GT",
+      "drive": "RWD",
+      "transmission": "Manual",
+      "fuel": "Gasoline",
+      "mileage": "155468",
+      "id": 7
     }
   ]
 }

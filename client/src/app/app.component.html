@@ -1,10 +1,5 @@
-<div class="container">
-    <h2>
-        Add A Car
-    </h2>
-    <app-button 
-        color="{{ showAddCar ? 'red' : 'green'}}" 
-        text="{{ showAddCar ? 'Close' : 'Add'}}" 
-        (btnClick)="toggleAddCar()"></app-button>
-    <app-cars></app-cars>
+<div>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
 </div>

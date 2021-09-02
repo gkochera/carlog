@@ -1,3 +1,37 @@
 <div class="car">
     <h3>{{car.year}} {{car.make}} {{car.model}} <fa-icon (click)="onDelete(car)" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon></h3>
+    <div class="car-list">
+        <div class="car-details">
+            <div class="car-details-title">
+                Transmission
+            </div>
+            <div class="car-details-info">
+                {{car.transmission}}
+            </div>
+        </div>
+        <div class="car-details">
+            <div class="car-details-title">
+                Mileage
+            </div>
+            <div class="car-details-info">
+                {{car.mileage}}
+            </div>
+        </div>
+        <div class="car-details">
+            <div class="car-details-title">
+                Fuel
+            </div>
+            <div class="car-details-info">
+                {{car.fuel}}
+            </div>
+        </div>
+        <div class="car-details">
+            <div class="car-details-title">
+                Drive
+            </div>
+            <div class="car-details-info">
+                {{car.drive}}
+            </div>
+        </div>
+    </div>
 </div>

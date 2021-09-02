@@ -1,0 +1,20 @@
+.car-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.car-details-title {
+    color:rgb(47, 78, 105);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.car-details-info {
+    color: rgb(36, 49, 59)
+}
