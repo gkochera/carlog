@@ -45,14 +45,14 @@
       "mileage": 113781
     },
     {
-      "year": "2015",
+      "year": 2015,
       "make": "Dodge",
       "model": "Ram",
       "submodel": "1500",
       "drive": "4WD",
       "transmission": "Automatic",
       "fuel": "Gasonline",
-      "mileage": "78855",
+      "mileage": 78855,
       "id": 6
     }
   ]

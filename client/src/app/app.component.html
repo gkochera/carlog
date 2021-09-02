@@ -2,6 +2,9 @@
     <h2>
         Add A Car
     </h2>
-    <app-button color="teal" text="Add" (btnClick)="addCar()"></app-button>
+    <app-button 
+        color="{{ showAddCar ? 'red' : 'green'}}" 
+        text="{{ showAddCar ? 'Close' : 'Add'}}" 
+        (btnClick)="toggleAddCar()"></app-button>
     <app-cars></app-cars>
 </div>

@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()">
+<form *ngIf="showAddCar" (ngSubmit)="onSubmit()">
     <div class="form-control">
         <label for='year'>Year</label>
         <input type='text' name='year' [(ngModel)]='year' id='year' placeholder='Add Vehicle Year...'>
