@@ -1,0 +1,33 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for='manufacturer'>Manufacturer</label>
+        <input type='text' name='manufacturer' [(ngModel)]='manufacturer' id='manufacturer' placeholder='Add Part Manufacturer...'>
+    </div>
+
+    <div class="form-control">
+        <label for='partNumber'>Part Number</label>
+        <input type='text' name='partNumber' [(ngModel)]='partNumber' id='partNumber' placeholder='Add Part Number...'>
+    </div>
+
+    <div class="form-control">
+        <label for='cost'>Cost</label>
+        <input type='text' name='cost' [(ngModel)]='cost' id='cost' placeholder='Add Part Cost...'>
+    </div>
+
+    <div class="form-control">
+        <label for='datePurchased'>Date Purchased</label>
+        <input type='text' name='datePurchased' [(ngModel)]='datePurchased' id='datePurchased' placeholder='Add Date of Purchase...'>
+    </div>
+  
+    <div class="form-control">
+        <label for='description'>Description</label>
+        <input type='text' name='description' [(ngModel)]='description' id='description' placeholder='Add Part Description...'>
+    </div>
+
+    <div class="form-control">
+        <label for='notes'>Notes</label>
+        <input type='text' name='notes' [(ngModel)]='notes' id='notes' placeholder='Add Notes...'>
+    </div>
+
+    <input type="submit" value="Save Part" />
+</form>

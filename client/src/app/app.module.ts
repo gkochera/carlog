@@ -15,6 +15,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PartsComponent } from './components/parts/parts.component';
 import { PartsDisplayComponent } from './components/parts-display/parts-display.component';
+import { AddPartComponent } from './components/add-part/add-part.component';
 
 const appRoutes: Routes = [
   {path: '', component: CarsComponent},
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     PartsComponent,
-    PartsDisplayComponent
+    PartsDisplayComponent,
+    AddPartComponent
   ],
   imports: [
     BrowserModule,

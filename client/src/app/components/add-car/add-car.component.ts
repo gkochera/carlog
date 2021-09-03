@@ -56,8 +56,6 @@ export class AddCarComponent implements OnInit {
     this.mileage = 0;
 
     this.onAddCar.emit(newCar);
-
-
   }
 
 }

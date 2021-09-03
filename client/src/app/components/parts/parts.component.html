@@ -1,9 +1,13 @@
 <h2>
     Parts
 </h2>
-<p>
-    This is the parts page.
-    <app-parts-display
-        [parts]="parts"
-    ></app-parts-display>
-</p>
+<app-button 
+    color="{{ showAddPart ? 'red' : 'green'}}" 
+    text="{{ showAddPart ? 'Close' : 'Add'}}" 
+    (btnClick)="toggleAddPart()"
+></app-button>
+<app-add-part *ngIf="showAddPart" (onAddPart)="addPart($event)"></app-add-part>
+<app-parts-display
+    [parts]="parts"
+></app-parts-display>
+

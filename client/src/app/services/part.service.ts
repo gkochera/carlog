@@ -12,6 +12,7 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
+
 export class PartService {
   private apiUrl = 'http://localhost:5000/parts';
 
@@ -19,5 +20,9 @@ export class PartService {
 
   getParts(): Observable<Part[]> {
     return this.http.get<Part[]>(this.apiUrl)
+  }
+
+  addPart(part: Part): Observable<Part> {
+    return this.http.post<Part>(this.apiUrl, part, httpOptions);
   }
 }

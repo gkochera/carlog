@@ -65,6 +65,15 @@
       "datePurchased": "September 2, 2021",
       "description": "Oil Filter",
       "notes": "Extra Long"
+    },
+    {
+      "manufacturer": "Bosch",
+      "partNumber": "78-8423-K",
+      "cost": "748",
+      "datePurchased": "October 1, 2021",
+      "description": "Spark Plug",
+      "notes": "8",
+      "id": 2
     }
   ]
 }
