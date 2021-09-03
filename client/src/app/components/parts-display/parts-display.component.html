@@ -1,8 +1,22 @@
 <div class="container">
-    <div 
-        class="row"
-        *ngFor="let part of parts"
-        parts="parts">
-        {{part.description}}
-    </div>
+    <table>
+        <thead>
+            <th>Manufacturer</th>
+            <th>Part Number</th>
+            <th>Cost</th>
+            <th>Date Purchased</th>
+            <th>Description</th>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+            <tr class="row" *ngFor="let part of parts">
+                <td>{{ part.manufacturer }}</td>
+                <td>{{ part.partNumber }}</td>
+                <td>{{ part.cost }}</td>
+                <td>{{ part.datePurchased }}</td>
+                <td>{{ part.description }}</td>
+                <td>{{ part.notes }}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

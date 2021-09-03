@@ -8,10 +8,10 @@ import { Part } from 'src/app/Part';
 })
 export class PartsDisplayComponent implements OnInit {
   @Input() parts!: Part[];
+  keys!: String[]
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.parts)
   }
 
 }
