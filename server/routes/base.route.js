@@ -6,7 +6,6 @@ router.get('/', function (req, res) {
 });
 
 router.use('/cars', require('./cars.route'))
-
 router.use('/parts', require('./parts.route'))
 
 module.exports = router;

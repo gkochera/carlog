@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dbConfig = require('./config/database.config');
 const routes = require('./routes/base.route');
-
 const app = express();
 
 app.use(express.json());
@@ -17,17 +16,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/api', routes);
-
-mongoose.connect(dbConfig.url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-}).then(() => {
-    console.log("Successfully connected to the database");
-}).catch(err => {
-    console.log('Could not connect to the database. Exiting now...', err);
-    process.exit();
-});
 
 const port = process.env.PORT || '5000';
 app.set('port', port);
