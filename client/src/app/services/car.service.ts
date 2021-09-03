@@ -14,7 +14,7 @@ const httpOptions = {
 })
 
 export class CarService {
-  private apiUrl = 'http://localhost:5000/cars';
+  private apiUrl = 'http://localhost:5000/api/cars';
 
   constructor(private http:HttpClient) { }
 
