@@ -1,5 +1,5 @@
 export interface Part {
-    id?: number,
+    _id?: number,
     manufacturer: string,
     partNumber: string,
     cost: string,

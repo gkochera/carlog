@@ -47,6 +47,28 @@ database.connect((err, client) => {
             res.json(result)
         })
     });
+
+    app.get('/api/parts', async (req, res) => {
+        db = database.getDb()
+        let cursor = db.collection('parts').find()
+        const values = await cursor.toArray()
+        res.json(values)
+    });
+    
+    app.post('/api/parts', (req, res) => {
+        db = database.getDb()
+        db.collection('parts').insertOne(req.body, (err, result) => {
+            res.json(result.ops[0])
+        })
+    });
+
+    app.delete('/api/parts/:id', (req, res) => {
+        db = database.getDb();
+        let car = {_id: mongodb.ObjectID(req.params.id)}
+        db.collection('parts').removeOne(car, (err, result) => {
+            res.json(result)
+        })
+    });
     
     const port = process.env.PORT || '5000';
     app.set('port', port);
