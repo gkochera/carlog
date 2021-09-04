@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Car } from '../../Car'
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-add-car',
@@ -22,6 +23,14 @@ export class AddCarComponent implements OnInit {
   mileage!: number;
   showAddCar!: boolean;
   subscription: Subscription;
+
+  addCarForm = new FormGroup({
+    year: new FormControl(''),
+    make: new FormControl(''),
+    model: new FormControl(''),
+    submodel: new FormControl(''),
+    drive: new Form
+  })
 
   constructor(private uiService: UiService) {
     this.subscription = this.uiService
