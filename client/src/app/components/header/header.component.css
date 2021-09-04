@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--celadon-blue);
+    height: 40px;
+    align-items: center;
+}
+
+.nav-link {
+    width: 80px;
+    text-align: center;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--white);
+}

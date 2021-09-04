@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --eerie-black: #191716ff;
+    --celadon-blue: #4281a4ff;
+    --white: #fcfcfcff;
+    --india-green: #358600ff;
+    --mint: #3ab795ff;
+}
+
 html, body {
     font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
