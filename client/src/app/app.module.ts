@@ -21,7 +21,8 @@ import { UsersComponent } from './components/users/users.component';
 const appRoutes: Routes = [
   {path: '', component: CarsComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'parts', component: PartsComponent}
+  {path: 'parts', component: PartsComponent},
+  {path: 'users', component: HeaderComponent}
 ]
 
 @NgModule({
