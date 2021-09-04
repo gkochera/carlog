@@ -7,6 +7,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
   templateUrl: './single-car.component.html',
   styleUrls: ['./single-car.component.css']
 })
+
 export class SingleCarComponent implements OnInit {
   @Input() car!: Car;
   @Output() onDeleteCar: EventEmitter<Car> = new EventEmitter;

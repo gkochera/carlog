@@ -12,4 +12,5 @@
 ></app-add-user>
 <app-user-display
     [users]="users"
+    (onDeleteUser)="deleteUser($event)"
 ></app-user-display>

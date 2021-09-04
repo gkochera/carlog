@@ -28,6 +28,12 @@ export class UsersComponent implements OnInit {
     })
   }
 
+  deleteUser(user: User) {
+    this.userService
+    .deleteUser(user)
+    .subscribe(() => this.users = this.users.filter(u => u._id !== user._id))
+  }
+
   toggleAddUser() {
     this.uiService.toggleAddUser()
   }
