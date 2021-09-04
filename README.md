@@ -6,20 +6,22 @@ CarLog is a MEAN application that tracks the maintenance on your vehicles. It's 
 
 ## Client
 
-- Add Users
 - Sidebar Navigation
 - Styling of panels
 - Login Page
 - Landing Page
 - Delete a part
+- Update a User
+- Update a Part
+- Update a Car
+- Input Validation
 
 ## Server
 
-- Add Users routes to backend
+- Data Validation
 
 ## Data Model and Database
 
-- Create users
 - Create maintenance
 
 ## Everything Else
