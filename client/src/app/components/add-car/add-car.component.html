@@ -1,42 +1,47 @@
 <form *ngIf="showAddCar" (ngSubmit)="onSubmit()">
-    <div class="form-control">
-        <label for='year'>Year</label>
-        <input type='text' name='year' [(ngModel)]='year' id='year' placeholder='Add Vehicle Year...'>
-    </div>
 
-    <div class="form-control">
-        <label for='make'>Make</label>
-        <input type='text' name='make' [(ngModel)]='make' id='make' placeholder='Add Vehicle Make...'>
+    <div class='form-section'>
+        <div class="form-control">
+            <label for='year'>Year</label>
+            <input type='text' name='year' [(ngModel)]='year' id='year' placeholder='Add Vehicle Year...'>
+        </div>
+    
+        <div class="form-control">
+            <label for='make'>Make</label>
+            <input type='text' name='make' [(ngModel)]='make' id='make' placeholder='Add Vehicle Make...'>
+        </div>
+    
+        <div class="form-control">
+            <label for='model'>Model</label>
+            <input type='text' name='model' [(ngModel)]='model' id='model' placeholder='Add Vehicle Model...'>
+        </div>
+    
+        <div class="form-control">
+            <label for='submodel'>Submodel</label>
+            <input type='text' name='submodel' [(ngModel)]='submodel' id='submodel' placeholder='Add Vehicle Submodel/Trim Level...'>
+        </div>
+      
+        <div class="form-control">
+            <label for='drive'>Drive</label>
+            <input type='text' name='drive' [(ngModel)]='drive' id='drive' placeholder='Add Vehicle Drive...'>
+        </div>
+    
+        <div class="form-control">
+            <label for='transmission'>Transmission</label>
+            <input type='text' name='transmission' [(ngModel)]='transmission' id='transmission' placeholder='Add Vehicle Transmission...'>
+        </div>
+    
+        <div class="form-control">
+            <label for='fuel'>Fuel</label>
+            <input type='text' name='fuel' [(ngModel)]='fuel' id='fuel' placeholder='Add Vehicle Fuel...'>
+        </div>
+    
+        <div class="form-control">
+            <label for='mileage'>Mileage</label>
+            <input type='text' name='mileage' [(ngModel)]='mileage' id='mileage' placeholder='Add Vehicle Mileage...'>
+        </div>
     </div>
-
-    <div class="form-control">
-        <label for='model'>Model</label>
-        <input type='text' name='model' [(ngModel)]='model' id='model' placeholder='Add Vehicle Model...'>
+    <div class="form-section">
+        <input type="submit" class='btn btn-submit' value="Save Car" />
     </div>
-
-    <div class="form-control">
-        <label for='submodel'>Submodel</label>
-        <input type='text' name='submodel' [(ngModel)]='submodel' id='submodel' placeholder='Add Vehicle Submodel/Trim Level...'>
-    </div>
-  
-    <div class="form-control">
-        <label for='drive'>Drive</label>
-        <input type='text' name='drive' [(ngModel)]='drive' id='drive' placeholder='Add Vehicle Drive...'>
-    </div>
-
-    <div class="form-control">
-        <label for='transmission'>Transmission</label>
-        <input type='text' name='transmission' [(ngModel)]='transmission' id='transmission' placeholder='Add Vehicle Transmission...'>
-    </div>
-
-    <div class="form-control">
-        <label for='fuel'>Fuel</label>
-        <input type='text' name='fuel' [(ngModel)]='fuel' id='fuel' placeholder='Add Vehicle Fuel...'>
-    </div>
-
-    <div class="form-control">
-        <label for='mileage'>Mileage</label>
-        <input type='text' name='mileage' [(ngModel)]='mileage' id='mileage' placeholder='Add Vehicle Mileage...'>
-    </div>
-    <input type="submit" value="Save Car" />
 </form>
