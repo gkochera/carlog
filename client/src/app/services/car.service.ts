@@ -23,7 +23,8 @@ export class CarService {
   }
 
   deleteCar(car: Car): Observable<Car> {
-    const url = `${this.apiUrl}/${car.id}`;
+    const url = `${this.apiUrl}/${car._id}`;
+    console.log(url)
     return this.http.delete<Car>(url);
   }
 

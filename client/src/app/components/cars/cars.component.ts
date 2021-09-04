@@ -19,13 +19,16 @@ export class CarsComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.carSerivce.getCars().subscribe((cars) => this.cars = cars)
+    this.carSerivce.getCars().subscribe((cars) => {
+      this.cars = cars;
+    })
+    
   }
 
   deleteCar(car: Car) {
     this.carSerivce
     .deleteCar(car)
-    .subscribe(() => this.cars = this.cars.filter(c => c.id !== car.id))
+    .subscribe(() => this.cars = this.cars.filter(c => c._id !== car._id))
   }
 
   addCar(car: Car) {

@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
-const mongodb = require('./config/database')
+const database = require('./config/database')
+const mongodb = require('mongodb')
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -22,22 +23,30 @@ app.use(cors({
 }));
 
 var db;
-mongodb.connect((err, client) => {
+database.connect((err, client) => {
     if (err) console.log(err);
 
     app.get('/api/cars', async (req, res) => {
-        db = mongodb.getDb()
+        db = database.getDb()
         let cursor = db.collection('cars').find()
         const values = await cursor.toArray()
         res.json(values)
-    })
+    });
     
     app.post('/api/cars', (req, res) => {
-        db = mongodb.getDb()
+        db = database.getDb()
         db.collection('cars').insertOne(req.body, (err, result) => {
             res.json(result.ops[0])
         })
-    })
+    });
+
+    app.delete('/api/cars/:id', (req, res) => {
+        db = database.getDb();
+        let car = {_id: mongodb.ObjectID(req.params.id)}
+        db.collection('cars').removeOne(car, (err, result) => {
+            res.json(result)
+        })
+    });
     
     const port = process.env.PORT || '5000';
     app.set('port', port);
