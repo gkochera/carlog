@@ -24,7 +24,6 @@ export class PartsComponent implements OnInit {
 
   addPart(part: Part) {
     this.partService.addPart(part).subscribe((parts) => this.parts.push(part))
-    console.log(part)
   }
 
   toggleAddPart() {

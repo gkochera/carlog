@@ -7,6 +7,7 @@ import { Observable, Subject } from 'rxjs';
 export class UiService {
   private showAddCar: boolean = false;
   private showAddPart: boolean = false;
+  private showAddUser: boolean = false;
   private subject = new Subject<any>();
 
   constructor() { }
@@ -19,6 +20,11 @@ export class UiService {
   toggleAddPart(): void {
     this.showAddPart = !this.showAddPart;
     this.subject.next(this.showAddPart);
+  }
+
+  toggleAddUser(): void {
+    this.showAddUser = !this.showAddUser;
+    this.subject.next(this.showAddUser);
   }
 
   onToggle(): Observable<any> {

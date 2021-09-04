@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/User';
+import { UserService } from 'src/app/services/user.service';
+import { Subscription } from 'rxjs';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-users',
@@ -6,10 +10,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+  subscription!: Subscription;
+  users: User[] = [];
+  showAddUser!: boolean;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private userService: UserService, private uiService: UiService) { 
+    this.subscription = this.uiService.onToggle().subscribe((value) => this.showAddUser = value)
   }
 
+  ngOnInit(): void {
+    this.userService.getUsers().subscribe((users) => this.users = users)
+  }
+
+  addUser(user: User) {
+    this.userService.addUser(user).subscribe((user) => {
+      this.users.push(user);
+    })
+  }
+
+  toggleAddUser() {
+    this.uiService.toggleAddUser()
+  }
 }

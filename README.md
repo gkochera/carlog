@@ -11,6 +11,7 @@ CarLog is a MEAN application that tracks the maintenance on your vehicles. It's 
 - Styling of panels
 - Login Page
 - Landing Page
+- Delete a part
 
 ## Server
 

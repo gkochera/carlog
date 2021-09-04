@@ -13,20 +13,20 @@ const httpOptions = {
   providedIn: 'root'
 })
 
-export class UsersService {
+export class UserService {
   private apiUrl = 'http://localhost:5000/api/users';
   constructor(private http: HttpClient) { }
     
-    getParts(): Observable<User[]> {
+    getUsers(): Observable<User[]> {
       return this.http.get<User[]>(this.apiUrl)
     }
 
-    deleteCar(user: User): Observable<User> {
+    deleteUser(user: User): Observable<User> {
       const url = `${this.apiUrl}/${user._id}`;
       return this.http.delete<User>(url);
     }
 
-    addPart(user: User): Observable<User> {
+    addUser(user: User): Observable<User> {
       return this.http.post<User>(this.apiUrl, user, httpOptions);
     }
 

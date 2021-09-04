@@ -8,6 +8,7 @@ import { Part } from 'src/app/Part';
   templateUrl: './add-part.component.html',
   styleUrls: ['./add-part.component.css']
 })
+
 export class AddPartComponent implements OnInit {
   subscription!: Subscription;
   showAddPart!: boolean;

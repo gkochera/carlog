@@ -7,11 +7,11 @@ import { Part } from 'src/app/Part';
   styleUrls: ['./parts-display.component.css']
 })
 export class PartsDisplayComponent implements OnInit {
+  
   @Input() parts!: Part[];
-  keys!: String[]
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

@@ -22,7 +22,7 @@ export class PartService {
     return this.http.get<Part[]>(this.apiUrl)
   }
 
-  deleteCar(part: Part): Observable<Part> {
+  deletePart(part: Part): Observable<Part> {
     const url = `${this.apiUrl}/${part._id}`;
     return this.http.delete<Part>(url);
   }

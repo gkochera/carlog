@@ -1,1 +1,15 @@
-<p>users works!</p>
+<h2>
+    Users
+</h2>
+<app-button 
+    color="{{ showAddUser ? 'red' : 'green'}}" 
+    text="{{ showAddUser ? 'Close' : 'Add'}}" 
+    (btnClick)="toggleAddUser()"
+></app-button>
+<app-add-user 
+    *ngIf="showAddUser"
+    (onAddUser)="addUser($event)"
+></app-add-user>
+<app-user-display
+    [users]="users"
+></app-user-display>
