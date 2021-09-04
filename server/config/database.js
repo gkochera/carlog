@@ -3,7 +3,7 @@ const dbConfig = require('./database.config')
 
 module.exports = {
     connect: function (callback) {
-        MongoClient.connect( dbConfig.url,  { useNewUrlParser: true }, function( err, client ) {
+        MongoClient.connect( dbConfig.url,  { useNewUrlParser: true, useUnifiedTopology: true }, function( err, client ) {
             _db  = client.db('carlog');
             return callback( err );
           } );
