@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PartsComponent } from './components/parts/parts.component';
 import { PartsDisplayComponent } from './components/parts-display/parts-display.component';
 import { AddPartComponent } from './components/add-part/add-part.component';
+import { UsersComponent } from './components/users/users.component';
 
 const appRoutes: Routes = [
   {path: '', component: CarsComponent},
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     FooterComponent,
     PartsComponent,
     PartsDisplayComponent,
-    AddPartComponent
+    AddPartComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
