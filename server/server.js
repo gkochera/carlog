@@ -1,33 +1,35 @@
 const express = require('express');
-const mongodb = require('mongodb')
-const dbConfig = require('./config/database.config');
 const app = express();
+const mongodb = require('./config/database')
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-const MongoClient = MongoClient(dbConfig.url, { useUnifiedTopology: true })
 var db;
+mongodb.connect((err, client) => {
+    if (err) console.log(err);
 
+    app.get('/api/cars', async (req, res) => {
+        db = mongodb.getDb()
+        let cursor = db.collection('cars').find()
+        const values = await cursor.toArray()
+        res.json(values)
+    })
+    
+    app.post('/api/cars', (req, res) => {
+        db = mongodb.getDb()
+        db.collection('cars').insertOne(req.body, (err, result) => {
+            res.json(result.ops[0])
+        })
+    })
+    
+    const port = process.env.PORT || '5000';
+    app.set('port', port);
 
-
-app.get('/api/cars', (req, res) => {
-    res.json("GET to /api/cars")
+    app.listen(port, () => {
+        console.log('Server is running....');
+    })
 })
 
-app.post('/api/cars', (req, res) => {
-    res.json("POST to /api/cars")
-})
 
-const port = process.env.PORT || '5000';
-app.set('port', port);
-
-MongoClient.connect(dbConfig.url, (err, database) => {
-    if (err) throw err;
-    db = database;
-    db.collection('cars').find()
-    app.listen(port, function () {
-        console.info(`Server is up and running on port ${port}`)
-    });
-})
 
