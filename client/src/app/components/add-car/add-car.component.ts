@@ -13,14 +13,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 export class AddCarComponent implements OnInit {
   @Output() onAddCar: EventEmitter<Car> = new EventEmitter;
-  year!: number;
-  make!: string;
-  model!: string;
-  submodel: string = "";
-  drive!: string;
-  transmission!: string;
-  fuel!: string;
-  mileage!: number;
+
   showAddCar!: boolean;
   subscription: Subscription;
 
@@ -29,7 +22,10 @@ export class AddCarComponent implements OnInit {
     make: new FormControl(''),
     model: new FormControl(''),
     submodel: new FormControl(''),
-    drive: new Form
+    drive: new FormControl(''),
+    transmission: new FormControl(''),
+    fuel: new FormControl(''),
+    mileage: new FormControl('')
   })
 
   constructor(private uiService: UiService) {
@@ -43,28 +39,8 @@ export class AddCarComponent implements OnInit {
   }
 
   onSubmit() {
-    
-    const newCar = {
-      year: this.year,
-      make: this.make,
-      model: this.model,
-      submodel: this.submodel,
-      drive: this.drive,
-      transmission: this.transmission,
-      fuel: this.fuel,
-      mileage: this.mileage
-    }
-
-    this.year = 0;
-    this.make = '';
-    this.model = '';
-    this.submodel = '';
-    this.drive = '';
-    this.transmission = '';
-    this.fuel = '';
-    this.mileage = 0;
-
-    this.onAddCar.emit(newCar);
+    this.onAddCar.emit(this.addCarForm.value);
+    this.addCarForm.reset();
   }
 
 }
