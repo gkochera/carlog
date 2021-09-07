@@ -91,6 +91,24 @@ database.connect((err, client) => {
             res.json(result)
         })
     });
+
+    app.get('/api/sitedata/makes', (req, res) => {
+        res.json({
+            makes: [
+                "Chevrolet",
+                "Volkswagen",
+                "Nissan",
+                "Pontiac",
+                "Lambroghini",
+                "Audi",
+                "Seat",
+                "Skoda",
+                "Ford",
+                "Dodge",
+                "Jeep"
+            ]
+        })
+    })
     
     const port = process.env.PORT || '5000';
     app.set('port', port);

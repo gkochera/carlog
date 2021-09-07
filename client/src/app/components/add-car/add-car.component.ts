@@ -1,9 +1,10 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Car } from '../../Car'
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
 import { FormGroup, FormControl, Validators, ValidationErrors } from '@angular/forms';
 import { ValidationService } from 'src/app/services/validation.service';
+import { PageDataService } from 'src/app/services/pagedata.service';
 
 @Component({
   selector: 'app-add-car',
@@ -16,7 +17,10 @@ export class AddCarComponent implements OnInit {
   @Output() onAddCar: EventEmitter<Car> = new EventEmitter;
 
   showAddCar!: boolean;
-  subscription: Subscription;
+  uiSubscription: Subscription;
+
+  makesDataSubscription: Subscription;
+  makes!: any;
 
   addCarForm = new FormGroup({
     year: new FormControl('', [
@@ -35,11 +39,13 @@ export class AddCarComponent implements OnInit {
     ])
   })
 
-  constructor(private uiService: UiService, private validationService: ValidationService) {
-    this.subscription = this.uiService
+  constructor(private uiService: UiService, private validationService: ValidationService, private pageDataService: PageDataService) {
+    this.uiSubscription = this.uiService
       .onToggle()
-      .subscribe((value) => this.showAddCar = value)
-
+      .subscribe((value) => this.showAddCar = value);
+    this.makesDataSubscription = this.pageDataService
+      .getMakes()
+      .subscribe((value) => this.makes = value.makes)
   }
 
   ngOnInit(): void {
@@ -50,8 +56,9 @@ export class AddCarComponent implements OnInit {
   }
 
   onSubmit() {
-    this.onAddCar.emit(this.addCarForm.value);
-    this.addCarForm.reset();
+    if (this.addCarForm.valid) {
+      this.onAddCar.emit(this.addCarForm.value);
+      this.addCarForm.reset();
+    }
   }
-
 }

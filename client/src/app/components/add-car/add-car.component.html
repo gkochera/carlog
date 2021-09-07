@@ -9,7 +9,10 @@
     
         <div class="form-control">
             <label for='make'>Make</label>
-            <input type='text' name='make' formControlName='make' id='make' placeholder='Add Vehicle Make...'>
+            <select type='select' name='make' formControlName='make' id='make'>
+                <option value="">Select Vehicle Make</option>
+                <option *ngFor="let make of makes">{{make}}</option>
+            </select>
         </div>
     
         <div class="form-control">
