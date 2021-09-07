@@ -4,7 +4,7 @@
         <div class="form-control">
             <label for='year'>Year</label>
             <input type='text' name='year' formControlName='year' id='year' placeholder='Add Vehicle Year...'>
-            <div *ngIf="addCarFormControl.year.errors?.isNotNumber">Must be a number.</div>
+            <div *ngIf="addCarFormControl.year.errors?.isNotNumber" style="color: red">Must be a number.</div>
         </div>
     
         <div class="form-control">
@@ -40,6 +40,7 @@
         <div class="form-control">
             <label for='mileage'>Mileage</label>
             <input type='text' name='mileage' formControlName='mileage' id='mileage' placeholder='Add Vehicle Mileage...'>
+            <div *ngIf="addCarFormControl.mileage.errors?.isNotNumber" style="color: red">Must be a number.</div>
         </div>
     </div>
     <div class="form-section">

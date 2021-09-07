@@ -29,7 +29,10 @@ export class AddCarComponent implements OnInit {
     drive: new FormControl(''),
     transmission: new FormControl(''),
     fuel: new FormControl(''),
-    mileage: new FormControl('')
+    mileage: new FormControl('', [
+      Validators.required,
+      this.validationService.mustBeNumber()
+    ])
   })
 
   constructor(private uiService: UiService, private validationService: ValidationService) {
