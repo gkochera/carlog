@@ -4,6 +4,7 @@
         <div class="form-control">
             <label for='year'>Year</label>
             <input type='text' name='year' formControlName='year' id='year' placeholder='Add Vehicle Year...'>
+            <div *ngIf="addCarFormControl.year.errors?.isNotNumber">Must be a number.</div>
         </div>
     
         <div class="form-control">
