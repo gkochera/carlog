@@ -19,8 +19,9 @@ export class AddCarComponent implements OnInit {
   showAddCar!: boolean;
   uiSubscription: Subscription;
 
-  makesDataSubscription: Subscription;
-  makes!: any;
+  carsDataSubscription: Subscription;
+  cars!: any;
+  car!: any;
 
   addCarForm = new FormGroup({
     year: new FormControl('', [
@@ -43,12 +44,17 @@ export class AddCarComponent implements OnInit {
     this.uiSubscription = this.uiService
       .onToggle()
       .subscribe((value) => this.showAddCar = value);
-    this.makesDataSubscription = this.pageDataService
-      .getMakes()
-      .subscribe((value) => this.makes = value.makes)
+    this.carsDataSubscription = this.pageDataService
+      .getCars()
+      .subscribe(value => this.setCars(value))
   }
 
   ngOnInit(): void {
+  }
+
+  setCars(value: any){
+    this.cars = value
+    console.log(this.cars)
   }
 
   get addCarFormControl() {

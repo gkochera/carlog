@@ -17,7 +17,7 @@ export class PageDataService {
 
   constructor(private http:HttpClient) { }
 
-  getMakes(): Observable<any> {
-    return this.http.get<any>(this.apiUrl + '/makes')
+  getCars(): Observable<any> {
+    return this.http.get<any>(this.apiUrl + '/cars')
   }
 }

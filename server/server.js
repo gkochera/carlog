@@ -93,8 +93,7 @@ database.connect((err, client) => {
     });
 
     app.get('/api/sitedata/makes', (req, res) => {
-        res.json({
-            makes: [
+            let makes = [
                 "Chevrolet",
                 "Volkswagen",
                 "Nissan",
@@ -105,9 +104,74 @@ database.connect((err, client) => {
                 "Skoda",
                 "Ford",
                 "Dodge",
-                "Jeep"
-            ]
-        })
+                "Jeep",
+                "Mercedes-Benz",
+                "Kia",
+                "Honda",
+                "Toyota",
+                "Lexus",
+                "Saturn",
+                "Chrysler",
+                "Fiat",
+                "Jaguar",
+                "Land Rover",
+                "Mitsubishi",
+                "Subaru"
+            ].sort()
+        res.json({ makes })
+    })
+
+    function compareCarMakes(a, b) {
+        if (a.make < b.make) {
+            return -1
+        } else if (a.make > b.make ) {
+            return 1
+        }
+        return 0;
+    }
+
+    app.get('/api/sitedata/cars', (req, res) => {
+        let cars = [
+            { 
+                make: "Chevrolet",
+                models: [
+                    {
+                        name: "Silverado",
+                        submodels: [
+                            "1500",
+                            "2500",
+                            "3500"
+                        ]
+                    }
+                ]
+            },
+            {
+                make: "Pontiac",
+                models: [
+                    {
+                        name: "Firebird",
+                        submodels: [
+                            "Trans Am",
+                            "Trans Am GT"
+                        ]
+                    }
+                ]
+            },
+            {
+                make: "Audi",
+                models: [
+                    {
+                        name: "A4",
+                        submodels: [
+                            "Avant",
+                            "Sedan"
+                        ]
+                    }
+                ]
+            }
+        ].sort(compareCarMakes)
+
+        res.json(cars)
     })
     
     const port = process.env.PORT || '5000';
