@@ -61,10 +61,23 @@ export class AddCarComponent implements OnInit {
     return this.addCarForm.controls;
   }
 
+  yearChoice(){
+    let years = [];
+    let i = 2021;
+    for (i; i > 1940; i--){
+      years.push(i);
+    }
+    return years
+  }
+
   onSubmit() {
     if (this.addCarForm.valid) {
+
+      // because we manipulate ngValue, we need to reset the values to the string representation before its sent to the db
       this.addCarForm.controls.make.setValue(this.addCarForm.controls.make.value.make)
       this.addCarForm.controls.model.setValue(this.addCarForm.controls.model.value.name)
+
+      // send the car
       this.onAddCar.emit(this.addCarForm.value);
       this.addCarForm.reset();
     }

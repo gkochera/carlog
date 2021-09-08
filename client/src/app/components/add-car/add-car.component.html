@@ -3,8 +3,10 @@
     <div class='form-section'>
         <div class="form-control">
             <label for='year'>Year</label>
-            <input type='text' name='year' formControlName='year' id='year' placeholder='Add Vehicle Year...'>
-            <div *ngIf="addCarFormControl.year.errors?.isNotNumber" style="color: red">Must be a number.</div>
+            <select type='select' name='year' formControlName='year' id='year'>
+                <option value="">Year</option>
+                <option *ngFor="let year of yearChoice()">{{year}}</option>
+            </select>
         </div>
     
         <div class="form-control">
@@ -34,18 +36,35 @@
         </div>
       
         <div class="form-control">
-            <label for='drive'>Drive</label>
-            <input type='text' name='drive' formControlName='drive' id='drive' placeholder='Add Vehicle Drive...'>
+            <label for='drive'>Drive Type</label>
+            <select type='select' name='drive' formControlName='drive' id='drive'>
+                <option value="">Drive Type</option>
+                <option>RWD</option>
+                <option>FWD</option>
+                <option>AWD</option>
+                <option>4WD</option>
+            </select>
         </div>
     
         <div class="form-control">
             <label for='transmission'>Transmission</label>
-            <input type='text' name='transmission' formControlName='transmission' id='transmission' placeholder='Add Vehicle Transmission...'>
+            <select type='select' name='transmission' formControlName='transmission' id='transmission'>
+                <option value="">Transmission</option>
+                <option>Automatic</option>
+                <option>Manual</option>
+                <option>Continuously Variable</option>
+            </select>
         </div>
     
         <div class="form-control">
             <label for='fuel'>Fuel</label>
-            <input type='text' name='fuel' formControlName='fuel' id='fuel' placeholder='Add Vehicle Fuel...'>
+            <select type='select' name='fuel' formControlName='fuel' id='fuel'>
+                <option value="">Fuel Type</option>
+                <option>Gasoline</option>
+                <option>Diesel</option>
+                <option>Electric</option>
+                <option>Propane</option>
+            </select>
         </div>
     
         <div class="form-control">
