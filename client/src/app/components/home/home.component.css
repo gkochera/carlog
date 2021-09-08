@@ -1,0 +1,7 @@
+.wrapper {
+    height: 100%;
+}
+
+.wrapper * {
+    text-align: center;
+}

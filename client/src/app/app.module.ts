@@ -19,9 +19,11 @@ import { AddPartComponent } from './components/add-part/add-part.component';
 import { UsersComponent } from './components/users/users.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserDisplayComponent } from './components/user-display/user-display.component';
+import { HomeComponent } from './components/home/home.component';
 
 const appRoutes: Routes = [
-  {path: '', component: CarsComponent},
+  {path: '', component: HomeComponent},
+  {path: 'home', component: CarsComponent},
   {path: 'about', component: AboutComponent},
   {path: 'parts', component: PartsComponent},
   {path: 'users', component: UsersComponent}
@@ -42,7 +44,8 @@ const appRoutes: Routes = [
     AddPartComponent,
     UsersComponent,
     AddUserComponent,
-    UserDisplayComponent
+    UserDisplayComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
