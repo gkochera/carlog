@@ -19,7 +19,7 @@
             <label for='model'>Model</label>
             <select type='select' name='model' formControlName='model' id='model'>
                 <option value="">Vehicle Model</option>
-                <option [ngValue]="model" *ngFor='let model of addCarFormControl.make.value?.models'>{{model.name}}</option>
+                <option [ngValue]="model" *ngFor='let model of addCarFormControl.make.value.models'>{{model.name}}</option>
             </select>
         </div>
     
@@ -27,7 +27,9 @@
             <label for='submodel'>Submodel</label>
             <select type='select' name='submodel' formControlName='submodel' id='submodel'>
                 <option value="">Vehicle Submodel</option>
-                <option *ngFor='let submodel of addCarFormControl.model.value?.submodels'>{{submodel}}</option>
+                <option
+                *ngFor='let submodel of addCarFormControl.model.value.submodels'
+                >{{submodel}}</option>
             </select>
         </div>
       

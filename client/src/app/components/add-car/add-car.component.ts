@@ -63,6 +63,8 @@ export class AddCarComponent implements OnInit {
 
   onSubmit() {
     if (this.addCarForm.valid) {
+      this.addCarForm.controls.make.setValue(this.addCarForm.controls.make.value.make)
+      this.addCarForm.controls.model.setValue(this.addCarForm.controls.model.value.name)
       this.onAddCar.emit(this.addCarForm.value);
       this.addCarForm.reset();
     }
