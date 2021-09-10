@@ -4,4 +4,9 @@
 
 .wrapper * {
     text-align: center;
+    margin: auto;
+}
+
+.login-form *, .signup-form * {
+    display: block;
 }
