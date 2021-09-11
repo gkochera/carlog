@@ -20,6 +20,7 @@ import { UsersComponent } from './components/users/users.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserDisplayComponent } from './components/user-display/user-display.component';
 import { HomeComponent } from './components/home/home.component';
+import { CarFunctionComponent } from './components/car-function/car-function.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     UsersComponent,
     AddUserComponent,
     UserDisplayComponent,
-    HomeComponent
+    HomeComponent,
+    CarFunctionComponent
   ],
   imports: [
     BrowserModule,

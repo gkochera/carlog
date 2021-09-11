@@ -6,29 +6,8 @@
         Image Placeholder
     </div>
     <div class='car-functions'>
-        <div class='car-function'>
-            <div (click)="onDelete(car)" class='car-function-icon'>
-                <fa-icon [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon>
-            </div>
-            <div class='car-function-text'>Delete</div>
-        </div>
-        <div class='car-function'>
-            <div class='car-function-icon'>
-                .
-            </div>
-            <div class='car-function-text'>Add Service</div>
-        </div>
-        <div class='car-function'>
-            <div class='car-function-icon'>
-                .
-            </div>
-            <div class='car-function-text'>Edit Car</div>
-        </div>
-        <div class='car-function'>
-            <div class='car-function-icon'>
-                .
-            </div>
-            <div class='car-function-text'>View Car</div>
-        </div>
+        <app-car-function (onClick)="onDelete(car)" action='delete'></app-car-function>
+        <app-car-function (onClick)="onEdit()" action='edit'></app-car-function>
+        <app-car-function (onClick)="onService()" action='addService'></app-car-function>
     </div>
 </div>

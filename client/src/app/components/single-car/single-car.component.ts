@@ -21,4 +21,12 @@ export class SingleCarComponent implements OnInit {
   onDelete(car: Car) {
     this.onDeleteCar.emit(car)
   }
+
+  onEdit() {
+    console.log("EDIT", this.car)
+  }
+  
+  onService() {
+    console.log("SERVICE", this.car)
+  }
 }
