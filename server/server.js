@@ -166,6 +166,33 @@ database.connect((err, client) => {
                             "Avant",
                             "Sedan"
                         ]
+                    },
+                    {
+                        name: "S4",
+                        submodels: [
+                            "Avant",
+                            "Sedan"
+                        ]
+                    },
+                    {
+                        name: "A6",
+                        submodels: [
+                            "Avant",
+                            "Sedan"
+                        ]
+                    }
+                ]
+            },
+            {
+                make: "Ford",
+                models: [
+                    {
+                        name: "Taurus",
+                        submodels: [
+                            "LX",
+                            "SHO",
+                            "Police Interceptor"
+                        ]
                     }
                 ]
             }

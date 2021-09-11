@@ -1,20 +1,22 @@
-.car-list {
+.car {
+    width: 400px;
+    background-color: beige;
+}
+
+.car-title {
+    background-color: rgba(0,0,0,.1);
+}
+
+.car-image {
+    height: 200px;
+}
+
+.car-functions {
+    background-color: cadetblue;
     display: flex;
-    flex-direction: row;
+    
 }
 
-.car-details {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-}
-
-.car-details-title {
-    color:rgb(47, 78, 105);
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.car-details-info {
-    color: rgb(36, 49, 59)
+.car-function {
+    flex: 1
 }
