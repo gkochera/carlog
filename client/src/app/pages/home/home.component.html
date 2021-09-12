@@ -2,33 +2,52 @@
     <h1>CarLog</h1>
     <p>A maintence tracker made for people who love cars!</p>
     <div class="login-signup">
-        <app-button (btnClick)="onSignUp()" text='Sign Up' theme='regular'></app-button>
-        <app-button (btnClick)="onLogin()" text='Login' theme='regular'></app-button>
+        <app-button (btnClick)="toggleSignUpForm()" text='Sign Up' theme='regular'></app-button>
+        <app-button (btnClick)="toggleLoginForm()" text='Login' theme='regular'></app-button>
     </div>
-    <div class="login-form" hidden>
+    <div class="login-form" *ngIf='showLoginForm'>
         <h3>Login</h3>
-        <form>
-            <label for="username">Username</label>
-            <input name="username" type=[text]/>
-            <label for="password">Password</label>
-            <input name="password" type=[password]/>
-            <button>Submit</button>
+        <form [formGroup]="loginForm">
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input formControlName="email" name="email" type="text"/>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input formControlName="password" name="password" type="password"/>
+            </div>
+            <div class="form-control">
+                <app-button (btnClick)='onLogin()' theme='regular' text='Login'></app-button>
+            </div>
         </form>
     </div>
-    <div class="signup-form" hidden>
+    <div class="signup-form" *ngIf='showSignUpForm'>
         <h3>Signup</h3>
-        <form>
-            <label for="firstname">First Name</label>
-            <input name="firstname" type=[text]/>
-            <label for="lastname">Last Name</label>
-            <input name="lastname" type=[text]/>
-            <label for="email">Email</label>
-            <input name="email" type=[text]>
-            <label for="password">Password</label>
-            <input name="password" type=[password]>
-            <label for="passwordagain">Password Again</label>
-            <input name="passwordagain" type=[password]>
-            <button>Submit</button>
+        <form [formGroup]="signUpForm">
+            <div class="form-control">
+                <label for="firstname">First Name</label>
+                <input formControlName="firstname" name="firstname" type="text"/>
+            </div>
+            <div class="form-control">
+                <label for="lastname">Last Name</label>
+                <input formControlName="lastname" name="lastname" type="text"/>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input formControlName="email" name="email" type="text">
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input formControlName="password" name="password" type="password">
+            </div>
+            <div class="form-control">
+                <label for="passwordagain">Password Again</label>
+                <input formControlName="rptPassword" name="passwordagain" type="password">
+            </div>
+            <div class="form-control">
+                <app-button (btnClick)='onSignUp()' theme='regular' text='Sign Up!'></app-button>
+            </div>
+
         </form>
     </div>
 </div>
