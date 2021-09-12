@@ -2,8 +2,8 @@
     Parts
 </h2>
 <app-button 
-    theme="{{ showAddPart ? 'regular' : 'inverted'}}" 
-    text="{{ showAddPart ? 'Close' : 'Add'}}" 
+    theme="{{ showAddPart ? 'inverted' : 'regular'}}" 
+    text="{{ showAddPart ? 'Close' : 'Add Part'}}" 
     (btnClick)="toggleAddPart()"
 ></app-button>
 <app-add-part *ngIf="showAddPart" (onAddPart)="addPart($event)"></app-add-part>
