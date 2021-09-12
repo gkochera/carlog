@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const database = require('./config/database')
-const mongodb = require('mongodb')
+const mongodb = require('mongodb');
+const { mongo } = require('mongoose');
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -31,6 +32,13 @@ database.connect((err, client) => {
         let cursor = db.collection('cars').find()
         const values = await cursor.toArray()
         res.json(values)
+    });
+
+    app.get('/api/cars/:carid', async (req, res) => {
+        db = database.getDb()
+        let car = {_id: mongodb.ObjectID(req.params.carid)}
+        let value = await db.collection('cars').findOne(car)
+        res.json(value)
     });
     
     app.post('/api/cars', (req, res) => {
