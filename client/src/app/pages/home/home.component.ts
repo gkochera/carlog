@@ -12,4 +12,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSignUp(): void {
+    console.log("Sign Up!")
+  }
+
+  onLogin(): void {
+    console.log("Login!")
+  }
+
 }

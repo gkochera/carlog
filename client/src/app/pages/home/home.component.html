@@ -2,8 +2,8 @@
     <h1>CarLog</h1>
     <p>A maintence tracker made for people who love cars!</p>
     <div class="login-signup">
-        <button>Create an Account</button>
-        <button>Login</button>
+        <app-button (btnClick)="onSignUp()" text='Sign Up' theme='regular'></app-button>
+        <app-button (btnClick)="onLogin()" text='Login' theme='regular'></app-button>
     </div>
     <div class="login-form" hidden>
         <h3>Login</h3>
