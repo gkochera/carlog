@@ -85,11 +85,14 @@ database.connect((err, client) => {
         res.json(values)
     });
     
-    app.post('/api/users', (req, res) => {
+    app.post('/api/users', async (req, res) => {
         db = database.getDb()
-        db.collection('users').insertOne(req.body, (err, result) => {
-            res.json(result.ops[0])
-        })
+        let result = await db.collection('users').insertOne(req.body)
+        if (result.insertedId) {
+            let cursor = await db.collection('users').findOne({_id: mongodb.ObjectID(result.insertedId)})
+            return res.json(cursor);
+        }
+        return res.json(res.json(null))
     });
 
     app.delete('/api/users/:id', (req, res) => {
