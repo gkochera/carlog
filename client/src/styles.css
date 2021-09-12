@@ -6,6 +6,7 @@
     --white: #fcfcfcff;
     --india-green: #358600ff;
     --mint: #3ab795ff;
+    --cool-blue: rgb(60, 88, 110);
 }
 
 html, body {
@@ -21,4 +22,8 @@ body {
 
 .content {
     flex: 1 0 auto;
+}
+
+.form-control {
+    padding: 10px;
 }

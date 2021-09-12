@@ -1,13 +1,22 @@
 <h3>Add Maintenance Item</h3>
+
 <form>
     <!-- Date -->
-    <label for="date">Date</label>
-    <input type="date" name="date">
+    <div class="form-control">
+        <label for="date">Date</label>
+        <input type="date" name="date">
+    </div>
+
 
     <!-- Type -->
-    <label for="type">Type</label>
-    <input type="text" name="type">
+    <div class="form-control">
+        <label for="type">Type</label>
+        <input type="text" name="type">
+    </div>
+
 
     <!-- Parts -->
-    <app-button (btnClick)="addPart()" text="Add Part" color="yellow"></app-button>
+    <div class="form-control">
+        <app-button (btnClick)="addPart()" text="Add Part" color="yellow"></app-button>
+    </div>
 </form>

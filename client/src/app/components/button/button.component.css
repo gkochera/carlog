@@ -1,0 +1,18 @@
+.btn {
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.btn-regular {
+    background-color: var(--cool-blue);
+    color: var(--white);
+    box-shadow: 2px 4px 5px rgb(182, 182, 182);
+}
+
+.btn-inverted {
+    background-color: var(--white);
+    color: var(--eerie-black);
+    border: 2px solid var(--cool-blue)
+}

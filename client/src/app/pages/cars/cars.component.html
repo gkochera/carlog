@@ -3,7 +3,7 @@
         My Cars
     </h2>
     <app-button 
-    color="{{ showAddCar ? 'red' : 'green'}}" 
+    theme="{{ showAddCar ? 'inverted' : 'regular'}}" 
     text="{{ showAddCar ? 'Close' : 'Add'}}" 
     (btnClick)="toggleAddCar()"></app-button>
     <app-add-car (onAddCar)="addCar($event)"></app-add-car>
