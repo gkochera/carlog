@@ -3,10 +3,32 @@ const app = express();
 const cors = require('cors')
 const database = require('./config/database')
 const mongodb = require('mongodb');
-const { mongo } = require('mongoose');
+const winston = require('winston');
+
+// Logging
+
+const logger = winston.createLogger({
+    level: 'debug',
+    format: winston.format.prettyPrint(),
+    transports: [
+        new winston.transports.File({ filename: 'app.log'})
+    ]
+})
+
+if (process.env.NODE_ENV !== 'production') {
+    logger.add(new winston.transports.Console({
+      format: winston.format.simple(),
+    }));
+}
+
+// Configuration
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use((req, res, next) => {
+    logger.log('info', `${req.method} ${req.url}`)
+    next()
+})
 
 // Set up CORS
 app.use(cors({
@@ -90,8 +112,10 @@ database.connect((err, client) => {
         let result = await db.collection('users').insertOne(req.body)
         if (result.insertedId) {
             let cursor = await db.collection('users').findOne({_id: mongodb.ObjectID(result.insertedId)})
+            logger.info(`Created user with ID: ${cursor._id}`)
             return res.json(cursor);
         }
+        logger.error('Failed to create new user.')
         return res.json(res.json(null))
     });
 

@@ -1,0 +1,6 @@
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e90e28f8ad584858b07c4',
+  level: 'info'
+}
