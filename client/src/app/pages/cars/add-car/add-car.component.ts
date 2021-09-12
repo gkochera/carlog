@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Car } from '../../Car'
+import { Car } from '../../../Car'
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
 import { FormGroup, FormControl, Validators, ValidationErrors } from '@angular/forms';

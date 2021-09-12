@@ -23,8 +23,8 @@ export class CarService {
     return this.http.get<Car[]>(this.apiUrl)
   }
 
-  getCar(car: Car): Observable<Car> {
-    return this.http.get<Car>(this.apiUrl + '/' + car._id)
+  getCar(carid: string): Observable<Car> {
+    return this.http.get<Car>(this.apiUrl + '/' + carid)
   }
 
   deleteCar(car: Car): Observable<Car> {
