@@ -25,9 +25,9 @@ export class CarFunctionComponent implements OnInit {
         this.color = 'blue';
         this.text = 'Edit';
         break;
-      case "addService":
+      case "service":
         this.color = 'gray';
-        this.text = 'Add Service'
+        this.text = 'Service'
     }   
   }
 

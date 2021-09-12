@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Car } from '../Car'
+import { Maintenance } from '../Maintenance';
 import { Observable } from 'rxjs';
 
 const httpOptions = {
@@ -22,6 +23,10 @@ export class CarService {
     return this.http.get<Car[]>(this.apiUrl)
   }
 
+  getCar(car: Car): Observable<Car> {
+    return this.http.get<Car>(this.apiUrl + '/' + car._id)
+  }
+
   deleteCar(car: Car): Observable<Car> {
     const url = `${this.apiUrl}/${car._id}`;
     return this.http.delete<Car>(url);
@@ -29,5 +34,9 @@ export class CarService {
 
   addCar(car: Car): Observable<Car> {
     return this.http.post<Car>(this.apiUrl, car, httpOptions);
+  }
+
+  getMaintenance(car: Car): Observable<Maintenance[]> {
+    return this.http.get<Maintenance[]>(this.apiUrl + '/' + car._id + '/maintenance')
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Car } from 'src/app/Car';
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-single-car',
@@ -13,7 +14,7 @@ export class SingleCarComponent implements OnInit {
   @Output() onDeleteCar: EventEmitter<Car> = new EventEmitter;
   faTimes = faTimes;
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
@@ -23,10 +24,10 @@ export class SingleCarComponent implements OnInit {
   }
 
   onEdit() {
-    console.log("EDIT", this.car)
+    console.log("EDIT", this.car) 
   }
   
   onService() {
-    console.log("SERVICE", this.car)
+    this.router.navigate([this.car._id, 'maintenance'], {relativeTo: this.route})
   }
 }
