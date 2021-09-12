@@ -35,7 +35,8 @@ export class AddUserComponent implements OnInit {
       firstName: this.firstName,
       lastName: this.lastName,
       email: this.email,
-      joinDate: now
+      joinDate: now,
+      password: ''
     }
 
     this.firstName = '';

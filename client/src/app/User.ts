@@ -3,5 +3,6 @@ export interface User {
     firstName: String,
     lastName: String,
     email: String,
-    joinDate: Date
+    joinDate: Date,
+    password: String
 }

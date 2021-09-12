@@ -25,12 +25,12 @@
         <h3>Signup</h3>
         <form [formGroup]="signUpForm">
             <div class="form-control">
-                <label for="firstname">First Name</label>
-                <input formControlName="firstname" name="firstname" type="text"/>
+                <label for="firstName">First Name</label>
+                <input formControlName="firstName" name="firstName" type="text"/>
             </div>
             <div class="form-control">
-                <label for="lastname">Last Name</label>
-                <input formControlName="lastname" name="lastname" type="text"/>
+                <label for="lastName">Last Name</label>
+                <input formControlName="lastName" name="lastName" type="text"/>
             </div>
             <div class="form-control">
                 <label for="email">Email</label>
@@ -41,13 +41,12 @@
                 <input formControlName="password" name="password" type="password">
             </div>
             <div class="form-control">
-                <label for="passwordagain">Password Again</label>
-                <input formControlName="rptPassword" name="passwordagain" type="password">
+                <label for="rptPassword">Password Again</label>
+                <input formControlName="rptPassword" name="rptPassword" type="password">
             </div>
             <div class="form-control">
                 <app-button (btnClick)='onSignUp()' theme='regular' text='Sign Up!'></app-button>
             </div>
-
         </form>
     </div>
 </div>
