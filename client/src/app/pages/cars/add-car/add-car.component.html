@@ -1,4 +1,4 @@
-<form *ngIf="showAddCar" (ngSubmit)="onSubmit()" [formGroup]='addCarForm'>
+<form *ngIf="showAddCar" [formGroup]='addCarForm'>
 
     <div class='form-section'>
         <div class="form-control">
@@ -74,6 +74,6 @@
         </div>
     </div>
     <div class="form-section">
-        <input type="submit" class='btn btn-submit' value="Save Car" />
+        <app-button (btnClick)="onSubmit()" theme='regular' text='Submit'></app-button>
     </div>
 </form>

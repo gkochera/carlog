@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Car } from 'src/app/Car';
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class SingleCarComponent implements OnInit {
   @Input() car!: Car;
   @Output() onDeleteCar: EventEmitter<Car> = new EventEmitter;
-  faTimes = faTimes;
+  faCamera = faCamera;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 

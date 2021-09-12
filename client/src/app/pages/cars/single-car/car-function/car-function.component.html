@@ -1,6 +1,6 @@
 <div class="car-function" (click)="doAction()" [ngStyle]="{backgroundColor: color}">
     <div class='car-function-icon'>
-        icon
+        <fa-icon [ngStyle]="{color: textColor}" [icon]='icon'></fa-icon>
     </div>
-    <div class='car-function-text'>{{ text }}</div>
+    <div [ngStyle]="{color: textColor}" class='car-function-text'>{{ text }}</div>
 </div>

@@ -1,19 +1,30 @@
 .car {
     width: 400px;
-    background-color: beige;
 }
 
 .car-title {
-    background-color: rgba(0,0,0,.1);
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
 }
 
 .car-image {
     height: 200px;
+    background-color: rgba(219, 219, 219, 1);
+    margin: 0 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.car-image * {
+    text-align: center;
+    font-size: 4em;
+    color:  rgba(0, 0, 0, 0.1)
 }
 
 .car-functions {
-    background-color: cadetblue;
     display: flex;
-    
 }
 

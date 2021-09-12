@@ -7,6 +7,9 @@
     --india-green: #358600ff;
     --mint: #3ab795ff;
     --cool-blue: rgb(60, 88, 110);
+    --cool-blue-light: rgb(217, 238, 255);
+    --warning-red: rgb(185, 0, 0);
+    --warning-red-light: rgb(248, 207, 207);
 }
 
 html, body {
