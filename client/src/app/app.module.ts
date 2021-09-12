@@ -20,7 +20,7 @@ import { UsersComponent } from './pages/users/users.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserDisplayComponent } from './components/user-display/user-display.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CarFunctionComponent } from './components/car-function/car-function.component';
+import { CarFunctionComponent } from './pages/cars/single-car/car-function/car-function.component';
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 import { CarComponent } from './pages/cars/car/car.component';
 

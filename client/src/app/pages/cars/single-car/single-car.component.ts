@@ -30,4 +30,8 @@ export class SingleCarComponent implements OnInit {
   onService() {
     this.router.navigate([this.car._id, 'maintenance'], {relativeTo: this.route})
   }
+
+  onView() {
+    this.router.navigate([this.car._id], {relativeTo: this.route})
+  }
 }
