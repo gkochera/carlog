@@ -1,18 +1,20 @@
-<h2>
-    My Cars
-</h2>
-<app-button 
-color="{{ showAddCar ? 'red' : 'green'}}" 
-text="{{ showAddCar ? 'Close' : 'Add'}}" 
-(btnClick)="toggleAddCar()"></app-button>
-<app-add-car (onAddCar)="addCar($event)"></app-add-car>
-<div class="car-display">
-    <app-single-car 
-    *ngFor="let car of cars" 
-    [car]="car" 
-    (onDeleteCar)="deleteCar(car)"
-></app-single-car>
+<div class="cars">
+    <h2>
+        My Cars
+    </h2>
+    <app-button 
+    color="{{ showAddCar ? 'red' : 'green'}}" 
+    text="{{ showAddCar ? 'Close' : 'Add'}}" 
+    (btnClick)="toggleAddCar()"></app-button>
+    <app-add-car (onAddCar)="addCar($event)"></app-add-car>
+    <div class="car-display">
+        <app-single-car 
+        *ngFor="let car of cars" 
+        [car]="car" 
+        (onDeleteCar)="deleteCar(car)"
+    ></app-single-car>
+    </div>
+    <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
 
 

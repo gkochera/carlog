@@ -23,6 +23,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CarFunctionComponent } from './pages/cars/single-car/car-function/car-function.component';
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 import { CarComponent } from './pages/cars/car/car.component';
+import { AddMaintenanceComponent } from './pages/maintenance/add-maintenance/add-maintenance.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -73,7 +74,8 @@ const appRoutes: Routes = [
     HomeComponent,
     CarFunctionComponent,
     MaintenanceComponent,
-    CarComponent
+    CarComponent,
+    AddMaintenanceComponent
   ],
   imports: [
     BrowserModule,
