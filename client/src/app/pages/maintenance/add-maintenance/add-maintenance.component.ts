@@ -7,13 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddMaintenanceComponent implements OnInit {
 
+  showAddParts: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  addPart(): void {
-    console.log('Part Added!')
+  showAddPart(): void {
+    this.showAddParts = !this.showAddParts;
+  }
+
+  pushPart(): void {
+    
   }
 
 }

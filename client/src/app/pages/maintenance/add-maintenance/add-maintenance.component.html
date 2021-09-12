@@ -17,6 +17,8 @@
 
     <!-- Parts -->
     <div class="form-control">
-        <app-button (btnClick)="addPart()" text="Add Part" color="yellow"></app-button>
+        <app-button (btnClick)="showAddPart()" text="Add Part" theme="regular"></app-button>
+        <p *ngIf="!showAddParts">You haven't added any parts for this maintenance.</p>
+        <app-add-part (onAddPart)="pushPart()" *ngIf="showAddParts"></app-add-part>
     </div>
 </form>

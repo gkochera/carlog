@@ -4,7 +4,7 @@
     </h2>
     <app-button 
     theme="{{ showAddCar ? 'inverted' : 'regular'}}" 
-    text="{{ showAddCar ? 'Close' : 'Add'}}" 
+    text="{{ showAddCar ? 'Close' : 'Add Car'}}" 
     (btnClick)="toggleAddCar()"></app-button>
     <app-add-car (onAddCar)="addCar($event)"></app-add-car>
     <div class="car-display">
