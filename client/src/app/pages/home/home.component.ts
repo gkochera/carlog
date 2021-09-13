@@ -19,11 +19,16 @@ export class HomeComponent implements OnInit {
     rptPassword: new FormControl('')
   })
 
+  signUpFormError = false;
+  signUpFormErrorMsg = '';
+
   // Login Form
   loginForm = new FormGroup({
     email: new FormControl(''),
     password: new FormControl('')
   })
+  loginFormError = false;
+  loginFormErrorMsg = '';
 
   // UI States
   showLoginForm: boolean = false;
@@ -39,9 +44,14 @@ export class HomeComponent implements OnInit {
     const newUser = <User>this.signUpForm.value
     this.userService
       .addUser(newUser)
-      .subscribe((result) => {
-        console.log(result)
-      })
+      .subscribe(
+        (result) => {
+          console.log(result)
+        },
+        (error) => {
+          this.signUpFormError = true;
+          this.signUpFormErrorMsg = error.error.message;
+        })
   }
 
   onLogin(): void {

@@ -47,6 +47,9 @@
             <div class="form-control">
                 <app-button (btnClick)='onSignUp()' theme='regular' text='Sign Up!'></app-button>
             </div>
+            <div *ngIf="signUpFormError">
+                <p style="color: red">{{ signUpFormErrorMsg }}</p>
+            </div>
         </form>
     </div>
 </div>

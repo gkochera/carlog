@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { catchError } from 'rxjs/operators'
+import { Observable, of, throwError } from 'rxjs';
 import { User } from '../User';
+import { CarComponent } from '../pages/cars/car/car.component';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -27,7 +29,14 @@ export class UserService {
     }
 
     addUser(user: User): Observable<User> {
-      return this.http.post<User>(this.apiUrl, user, httpOptions);
+      let result = this.http.post<User>(this.apiUrl, user, httpOptions)
+      .pipe(
+        catchError((err) => {
+          return throwError(err);
+        })
+
+      )
+      return result;
     }
 
 }

@@ -109,10 +109,22 @@ database.connect((err, client) => {
     
     app.post('/api/users', async (req, res) => {
         db = database.getDb()
+        
+        // See if the user is already registered in our database
+        let email = req.body.email;
+        let emailCursor = await db.collection('users').findOne({email})
+        if (emailCursor !== null) {
+            logger.error(`Email already registered ${req.body.email}`)
+            return res.status(403).json({
+                message: "Email is already registered.",
+                code: "emailAlreadyRegistered"
+            })
+        }
+
         let result = await db.collection('users').insertOne(req.body)
         if (result.insertedId) {
             let cursor = await db.collection('users').findOne({_id: mongodb.ObjectID(result.insertedId)})
-            logger.info(`Created user with ID: ${cursor._id}`)
+            logger.info(`Created user with ID: ${cursor._id} (${email})` )
             return res.json(cursor);
         }
         logger.error('Failed to create new user.')

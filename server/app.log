@@ -4,3 +4,653 @@
   message: 'Created user with ID: 613e90e28f8ad584858b07c4',
   level: 'info'
 }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e91948f8ad584858b07c5',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e92108f8ad584858b07c6',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/users' }
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/61384874b28431becb0412bb'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/61384874b28431becb0412bb'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e7873537251165e1a5a68'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e7873537251165e1a5a68'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e7905537251165e1a5a69'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e7905537251165e1a5a69'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e7945537251165e1a5a6a'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e7945537251165e1a5a6a'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e85d9015a2c639ca6b22a'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e85d9015a2c639ca6b22a'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e868cd0a7d1662eee2b30'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e868cd0a7d1662eee2b30'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8690d0a7d1662eee2b31'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8690d0a7d1662eee2b31'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e869bd0a7d1662eee2b32'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e869bd0a7d1662eee2b32'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86ae71fe1466784f1455'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86ae71fe1466784f1455'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86b571fe1466784f1456'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86b571fe1466784f1456'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86b571fe1466784f1457'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86b571fe1466784f1457'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86b571fe1466784f1458'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86b571fe1466784f1458'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86b571fe1466784f1459'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86b571fe1466784f1459'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86b571fe1466784f145a'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86b571fe1466784f145a'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86b671fe1466784f145b'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86b671fe1466784f145b'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86d885557f66dc346108'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86d885557f66dc346108'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e86e1e853e267432a6db2'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e86e1e853e267432a6db2'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8842cb7ee167db495194'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8842cb7ee167db495194'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e888ff8d34368cb45d79b'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e888ff8d34368cb45d79b'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e89123928a86af3d26fb5'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e89123928a86af3d26fb5'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e89213928a86af3d26fb6'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e89213928a86af3d26fb6'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e892e185e916b44ca4898'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e892e185e916b44ca4898'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8949185e916b44ca4899'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8949185e916b44ca4899'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e895974b0bd6be0f8b14a'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e895974b0bd6be0f8b14a'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8961051fd86c2ba3cbe9'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8961051fd86c2ba3cbe9'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8986c592c86d38afb511'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8986c592c86d38afb511'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e899f7737886dce9b47ed'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e899f7737886dce9b47ed'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e89b442d0ee6e0225d13a'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e89b442d0ee6e0225d13a'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e89bc64b4576e4be316c9'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e89bc64b4576e4be316c9'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e89e78c83696ef4255acb'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e89e78c83696ef4255acb'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e89fef0e3c16f972edcb7'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e89fef0e3c16f972edcb7'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8a40d280886fec866f07'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8a40d280886fec866f07'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8a88d17fad70f5009f41'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8a88d17fad70f5009f41'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8a94530d4a7151cee360'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8a94530d4a7151cee360'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8af31753ed744b15435c'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8af31753ed744b15435c'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8b0a1753ed744b15435d'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8b0a1753ed744b15435d'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8d813753c47bcca4a6d8'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8d813753c47bcca4a6d8'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8e5fb343267d9d364683'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8e5fb343267d9d364683'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8e7bb343267d9d364684'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8e7bb343267d9d364684'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8ea667dae67e8d44f6bd'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8ea667dae67e8d44f6bd'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8ed38c36e67fdd1dc826'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8ed38c36e67fdd1dc826'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8f195a82f28153adf681'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8f195a82f28153adf681'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e8f4d5a82f28153adf682'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e8f4d5a82f28153adf682'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e9007865c90829c5b2ccd'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e9007865c90829c5b2ccd'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e9029593afc833d0a9003'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e9029593afc833d0a9003'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e9039d288bc838d104265'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e9039d288bc838d104265'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e90c88f8ad584858b07c3'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e90c88f8ad584858b07c3'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e90e28f8ad584858b07c4'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e90e28f8ad584858b07c4'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e91948f8ad584858b07c5'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e91948f8ad584858b07c5'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e9279bdc82987db7d8f9e',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e92cba359c98966a02b0a',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e92e3a359c98966a02b0b',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e92efa359c98966a02b0c',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e930aa359c98966a02b0d',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e9316a359c98966a02b0e',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e9435a359c98966a02b0f',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e96e57bd74991a4045dc1',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e96ed7bd74991a4045dc2',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/users' }
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e92108f8ad584858b07c6'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e92108f8ad584858b07c6'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e9279bdc82987db7d8f9e'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e9279bdc82987db7d8f9e'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e92cba359c98966a02b0a'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e92cba359c98966a02b0a'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e92e3a359c98966a02b0b'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e92e3a359c98966a02b0b'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e92efa359c98966a02b0c'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e92efa359c98966a02b0c'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e930aa359c98966a02b0d'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e930aa359c98966a02b0d'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e9316a359c98966a02b0e'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e9316a359c98966a02b0e'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e9435a359c98966a02b0f'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e9435a359c98966a02b0f'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e96e57bd74991a4045dc1'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e96e57bd74991a4045dc1'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/users/613e96ed7bd74991a4045dc2'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e96ed7bd74991a4045dc2'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered [object Object]', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered [object Object]', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered [object Object]', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered b', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered b', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered asdfdasf', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered asdfdasf', level: 'error' }
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613e9f9895302ca4cbb913b2',
+  level: 'info'
+}
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered fff', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea14995302ca4cbb913b3',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered a', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea2d195302ca4cbb913b4',
+  level: 'info'
+}
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea2d495302ca4cbb913b5',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered basdfasdf', level: 'error' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea31c5788afac83927f0c (basdfasdf@gmail.com)',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/users' }
