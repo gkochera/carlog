@@ -100,6 +100,14 @@ database.connect((err, client) => {
         })
     });
 
+    app.post('/api/login', async (req, res) => {
+        db = database.getDb()
+        console.log(req.body)
+        let cursor = await db.collection('users').findOne({email: req.body.email})
+        console.log(cursor)
+        res.json(cursor)
+    })
+
     app.get('/api/users', async (req, res) => {
         db = database.getDb()
         let cursor = db.collection('users').find()

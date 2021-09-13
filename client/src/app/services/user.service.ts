@@ -39,4 +39,16 @@ export class UserService {
       return result;
     }
 
+    loginUser(email: string): Observable<User> {
+      let body = {email}
+      let result = this.http.post<User>('http://localhost:5000/api/login', body, httpOptions)
+      .pipe(
+        catchError((err) => {
+          return throwError(err);
+        })
+
+      )
+      return result;
+    }
+
 }

@@ -758,3 +758,45 @@
 { level: 'info', message: 'OPTIONS /api/users' }
 { level: 'info', message: 'POST /api/users' }
 { message: 'Email already registered beaverh@osu.edu', level: 'error' }
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/users/undefined/cars' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/users/undefined/cars' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/users/undefined/cars' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613eac895788afac83927f11/cars'
+}
+{ level: 'info', message: 'OPTIONS /api/cars' }
+{ level: 'info', message: 'POST /api/cars' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613eb7eccd3a8dd3cd619a3d (234234)',
+  level: 'info'
+}
+{
+  level: 'info',
+  message: 'GET /api/users/613eb7eccd3a8dd3cd619a3d/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613eac895788afac83927f11/cars'
+}

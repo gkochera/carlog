@@ -58,7 +58,18 @@ export class HomeComponent implements OnInit {
 
   onLogin(): void {
     console.log("Login!")
-    console.log(this.loginForm.value)
+    this.userService
+    .loginUser(this.loginForm.value.email)
+    .subscribe(
+      (result) => {
+
+        localStorage.setItem('user-id', <string>result._id)
+        this.router.navigate(['cars'])
+      },
+      (error) => {
+        this.signUpFormError = true;
+        this.signUpFormErrorMsg = error.error.message;
+      })
   }
 
   toggleLoginForm() {
