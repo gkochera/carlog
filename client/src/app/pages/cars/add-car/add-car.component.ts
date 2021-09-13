@@ -76,9 +76,10 @@ export class AddCarComponent implements OnInit {
       // because we manipulate ngValue, we need to reset the values to the string representation before its sent to the db
       this.addCarForm.controls.make.setValue(this.addCarForm.controls.make.value.make)
       this.addCarForm.controls.model.setValue(this.addCarForm.controls.model.value.name)
-
+      let car = this.addCarForm.value;
+      car.ownerId = localStorage.getItem('user-id');
       // send the car
-      this.onAddCar.emit(this.addCarForm.value);
+      this.onAddCar.emit(car);
       this.addCarForm.reset();
     }
   }

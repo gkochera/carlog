@@ -128,8 +128,18 @@ database.connect((err, client) => {
             return res.json(cursor);
         }
         logger.error('Failed to create new user.')
-        return res.json(res.json(null))
+        return res.json(null)
     });
+
+    app.get('/api/users/:userId/cars', async (req, res) => {
+        db = database.getDb();
+        let user = req.params.userId;
+
+        let cursor = await db.collection('cars').find({ownerId: mongodb.ObjectID(user)}).toArray();
+        console.log(user)
+        console.log(cursor)
+        return res.json(cursor);
+    })
 
     app.delete('/api/users/:id', (req, res) => {
         db = database.getDb();

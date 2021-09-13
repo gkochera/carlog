@@ -14,15 +14,22 @@ export class CarsComponent implements OnInit {
     showAddCar!: boolean;
     subscription!: Subscription;
     cars: Car[] = [];
+    userId: String = <String>localStorage.getItem('user-id');
 
   constructor(private carSerivce: CarService, private uiService: UiService) {
       this.subscription = this.uiService.onToggle().subscribe((value) => this.showAddCar = value)
    }
 
   ngOnInit(): void {
-    this.carSerivce.getCars().subscribe((cars) => {
-      this.cars = cars;
-    })
+    if (this.userId !== null) {
+      this.carSerivce.getUserCars(this.userId).subscribe((cars) => {
+        this.cars = cars;
+      })
+    } else {
+      this.carSerivce.getCars().subscribe((cars) => {
+        this.cars = cars;
+      })
+    }
     
   }
 

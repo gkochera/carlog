@@ -1,5 +1,5 @@
 export interface Car {
-    _id?: number,
+    _id: number,
     year: number,
     make: string,
     model: string,
@@ -7,5 +7,6 @@ export interface Car {
     drive: string,
     transmission: string,
     fuel: string,
-    mileage: number
+    mileage: number,
+    ownerId: string
 }

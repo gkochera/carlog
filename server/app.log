@@ -654,3 +654,107 @@
   level: 'info'
 }
 { level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea3aa5788afac83927f0d (tjeff@wh.gov)',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea5815788afac83927f0e (hdickens@gmail.com)',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea6275788afac83927f0f (hhh)',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613ea6605788afac83927f10 (dd)',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613eac895788afac83927f11 (beaverh@osu.edu)',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613eac895788afac83927f11/cars'
+}
+{
+  level: 'info',
+  message: 'GET /api/users/613eac895788afac83927f11/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613eac895788afac83927f11/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613eac895788afac83927f11/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613eac895788afac83927f11/cars'
+}
+{ level: 'info', message: 'OPTIONS /api/cars' }
+{ level: 'info', message: 'POST /api/cars' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Email already registered george.kochera@gmail.com',
+  level: 'error'
+}
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 613eb3a56ec06fc78a7f48c2 (hgov@gma..cc)',
+  level: 'info'
+}
+{
+  level: 'info',
+  message: 'GET /api/users/613eb3a56ec06fc78a7f48c2/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'OPTIONS /api/users' }
+{ level: 'info', message: 'POST /api/users' }
+{ message: 'Email already registered beaverh@osu.edu', level: 'error' }

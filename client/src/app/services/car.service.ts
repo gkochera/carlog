@@ -23,6 +23,10 @@ export class CarService {
     return this.http.get<Car[]>(this.apiUrl)
   }
 
+  getUserCars(userId: String) {
+    return this.http.get<Car[]>(`http://localhost:5000/api/users/${userId}/cars`)
+  }
+
   getCar(carid: string): Observable<Car> {
     return this.http.get<Car>(this.apiUrl + '/' + carid)
   }
