@@ -1,0 +1,7 @@
+:host {
+    flex: 1 0 auto;
+}
+
+tr:nth-of-type(2n) {
+    background-color: aqua;
+}
