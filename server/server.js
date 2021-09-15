@@ -65,6 +65,7 @@ database.connect((err, client) => {
     
     app.post('/api/cars', (req, res) => {
         db = database.getDb()
+        req.body.ownerId = mongodb.ObjectID(req.body.ownerId);
         db.collection('cars').insertOne(req.body, (err, result) => {
             res.json(result.ops[0])
         })
@@ -104,7 +105,7 @@ database.connect((err, client) => {
         db = database.getDb()
         console.log(req.body)
         let cursor = await db.collection('users').findOne({email: req.body.email})
-        console.log(cursor)
+        console.log("Login Event", cursor)
         res.json(cursor)
     })
 
@@ -142,7 +143,7 @@ database.connect((err, client) => {
     app.get('/api/users/:userId/cars', async (req, res) => {
         db = database.getDb();
         let user = req.params.userId;
-
+        console.log("Get Garage Dashboard", user)
         let cursor = await db.collection('cars').find({ownerId: mongodb.ObjectID(user)}).toArray();
         console.log(user)
         console.log(cursor)
