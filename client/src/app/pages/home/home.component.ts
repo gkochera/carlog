@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
       .subscribe(
         (result) => {
           localStorage.setItem('user-id', <string>result._id)
-          this.router.navigate(['cars'])
+          this.router.navigate(['garage'])
         },
         (error) => {
           this.signUpFormError = true;
@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit {
       (result) => {
 
         localStorage.setItem('user-id', <string>result._id)
-        this.router.navigate(['cars'])
+        this.router.navigate(['garage'])
       },
       (error) => {
         this.signUpFormError = true;

@@ -28,13 +28,17 @@ import { AddMaintenanceComponent } from './pages/maintenance/add-maintenance/add
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {
-    path: 'cars',
+    path: 'garage',
     children: [
       {
         path: '',
         pathMatch: 'full',
         component: GarageComponent
-      },
+      }
+      ]
+    },
+    {path: 'cars',
+    children: [
       {
         path: ':carid',
         children: [
@@ -48,8 +52,9 @@ const appRoutes: Routes = [
             component: MaintenanceComponent
           }
         ]
-      }
-    ]},
+      },
+    ]
+  },
   {path: 'about', component: AboutComponent},
   {path: 'parts', component: PartsComponent},
   {path: 'users', component: UsersComponent}

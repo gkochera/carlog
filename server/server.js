@@ -143,10 +143,8 @@ database.connect((err, client) => {
     app.get('/api/users/:userId/cars', async (req, res) => {
         db = database.getDb();
         let user = req.params.userId;
-        console.log("Get Garage Dashboard", user)
         let cursor = await db.collection('cars').find({ownerId: mongodb.ObjectID(user)}).toArray();
-        console.log(user)
-        console.log(cursor)
+        logger.info(`Retrieved ${cursor.length} car(s) for user with ID ${user}.`)
         return res.json(cursor);
     })
 
