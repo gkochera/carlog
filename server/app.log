@@ -1318,3 +1318,232 @@
   message: 'Retrieved 2 car(s) for user with ID 6141f33aeaf6defe62efd627.',
   level: 'info'
 }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/6141f33aeaf6defe62efd627/cars'
+}
+{
+  message: 'Retrieved 2 car(s) for user with ID 6141f33aeaf6defe62efd627.',
+  level: 'info'
+}
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/6141f33aeaf6defe62efd627/cars'
+}
+{
+  message: 'Retrieved 2 car(s) for user with ID 6141f33aeaf6defe62efd627.',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/cars/6141f4bc4651d008ac222e51' }
+{ level: 'info', message: 'GET /api/cars/6141f4bc4651d008ac222e51' }
+{ level: 'info', message: 'GET /api/cars/6141f4bc4651d008ac222e51' }
+{ level: 'info', message: 'GET /api/cars/6141f4bc4651d008ac222e51' }
+{ level: 'info', message: 'GET /api/parts' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/6141f33aeaf6defe62efd627/cars'
+}
+{
+  message: 'Retrieved 2 car(s) for user with ID 6141f33aeaf6defe62efd627.',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'POST /api/cars/324/maintenance' }
+{ level: 'info', message: 'POST /api/cars/324/maintenance' }
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f5194651d008ac222e54/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f5194651d008ac222e54/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f5194651d008ac222e54/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6151f5194651d008ac222e54/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6151f5194651d008ac222e54/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f5194651d008ac222e54/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f5194651d008ac222e54/maintenance'
+}
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/6141f33aeaf6defe62efd627/cars'
+}
+{
+  message: 'Retrieved 2 car(s) for user with ID 6141f33aeaf6defe62efd627.',
+  level: 'info'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{ level: 'info', message: 'OPTIONS /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/6141f33aeaf6defe62efd627/cars'
+}
+{
+  message: 'Retrieved 2 car(s) for user with ID 6141f33aeaf6defe62efd627.',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/cars/6141f4bc4651d008ac222e51' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/6141f33aeaf6defe62efd627/cars'
+}
+{
+  message: 'Retrieved 2 car(s) for user with ID 6141f33aeaf6defe62efd627.',
+  level: 'info'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}

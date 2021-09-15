@@ -1,5 +1,3 @@
-<h3>Add Maintenance Item</h3>
-
 <form>
     <!-- Date -->
     <div class="form-control">
@@ -19,6 +17,13 @@
     <div class="form-control">
         <app-button (btnClick)="showAddPart()" text="Add Part" theme="regular"></app-button>
         <p *ngIf="!showAddParts">You haven't added any parts for this maintenance.</p>
-        <app-add-part (onAddPart)="pushPart()" *ngIf="showAddParts"></app-add-part>
+        <app-add-part (onAddPart)="pushPart($event)" *ngIf="showAddParts"></app-add-part>
     </div>
+
+    <!-- Parts Display -->
+    <app-parts-display [parts]="parts"></app-parts-display>
+    <!-- Actions -->
+    <app-button (btnClick)="onSubmit()" theme='regular' text='Submit Maintenance Item'></app-button>
+    <app-button (btnClick)="onReset()" theme='regular' text='Reset'></app-button>
+    <app-button (btnClick)="onCancel()" theme='regular' text='Return to Car'></app-button>
 </form>

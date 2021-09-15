@@ -1,2 +1,5 @@
 <p>Maintenance carid: {{ carid }}</p>
-<app-add-maintenance></app-add-maintenance>
+<h2> Maintenance History</h2>
+<p> This is where the maintenance history will appear.</p>
+<h2> Add Maintenance</h2>
+<app-add-maintenance (onAddMaintenance)="onAddMaintenance($event)" [carid]="carid"></app-add-maintenance>

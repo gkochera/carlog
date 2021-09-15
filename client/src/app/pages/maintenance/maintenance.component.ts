@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Maintenance } from 'src/app/Maintenance';
+import { MaintenanceService } from 'src/app/services/maintenance.service';
 
 @Component({
   selector: 'app-maintenance',
@@ -8,11 +10,23 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class MaintenanceComponent implements OnInit {
-  carid: number = this.router.snapshot.params['carid']
-
-  constructor(private router: ActivatedRoute) { }
+  carid: string = this.router.snapshot.params['carid']
+  maintenances: Maintenance[] = []
+  
+  constructor(
+    private maintenanceService: MaintenanceService,
+    private router: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  onAddMaintenance(newMaintenance: Maintenance): void {
+    this.maintenanceService
+      .addMaintenance(newMaintenance)
+      .subscribe((car) => {
+        
+      });
   }
 
 }

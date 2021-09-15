@@ -4,6 +4,7 @@ const cors = require('cors')
 const database = require('./config/database')
 const mongodb = require('mongodb');
 const winston = require('winston');
+const { mongo } = require('mongoose');
 
 // Logging
 
@@ -62,6 +63,66 @@ database.connect((err, client) => {
         let value = await db.collection('cars').findOne(car)
         res.json(value)
     });
+
+    /*
+    GET ALL MAINTENANCE ITEMS FOR A SPECIFIC VEHILCE
+    */
+    app.get('api/cars/:carid/maintenance', async (req, res) => {
+        return res.json("yes")
+    })
+
+    /*
+    ADD A NEW MAINTENANCE ITEM TO A SPECIFIC VEHICLE
+    */
+    app.post('/api/cars/:carid/maintenance', async (req, res) => {
+        // Get a Database Instance
+        db = database.getDb();
+
+        // Make the Car ID is valid
+        let car;
+        let carid = mongodb.ObjectID(req.params.carid);
+        try {
+            car = {_id: carid};
+        } catch (Error) {
+            return res.status(400).json({
+                message: "Invalid Car ID"
+            })
+        }
+        
+        // Find the car in the database
+        let value = await db.collection('cars').findOne(car);
+        
+        // If the car doesn't exist, send an error back to the client.
+        if (value === null) {
+            return res.status(404).json({
+                message: `Car with ID ${carid} does not exist.`
+            })
+        }
+
+
+
+        // Add the maintenance item
+        value = db.collection('cars').findOneAndUpdate(
+            {"_id": carid},
+            { "$push": {
+                "maintenance": req.body
+            }},
+            {safe: true, upsert: true},
+            (err, elem) => {
+                if (err) {
+
+                    return res.status(500).json({
+                        message: `There was an error ${err}`
+                    })
+                } else {
+                    
+                    // Send the updated car back to the client.
+                    return res.status(200).json(elem.value);
+                }
+
+            }
+        )
+    })
     
     app.post('/api/cars', (req, res) => {
         db = database.getDb()

@@ -1,3 +1,5 @@
+import { Maintenance } from "./Maintenance";
+
 export interface Car {
     _id: number,
     year: number,
@@ -8,5 +10,6 @@ export interface Car {
     transmission: string,
     fuel: string,
     mileage: number,
-    ownerId: string
+    ownerId: string,
+    maintenance: Maintenance[]
 }

@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()">
+<form>
     <div class="form-control">
         <label for='manufacturer'>Manufacturer</label>
         <input type='text' name='manufacturer' [(ngModel)]='manufacturer' id='manufacturer' placeholder='Add Part Manufacturer...'>
@@ -28,6 +28,5 @@
         <label for='notes'>Notes</label>
         <input type='text' name='notes' [(ngModel)]='notes' id='notes' placeholder='Add Notes...'>
     </div>
-
-    <input type="submit" value="Save Part" />
+    <app-button (btnClick)="onSubmit()" theme='regular' text='Save Part'></app-button>
 </form>
