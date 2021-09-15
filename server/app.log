@@ -1547,3 +1547,42 @@
   level: 'info',
   message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
 }
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'OPTIONS /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{ level: 'info', message: 'GET /api/cars' }
+{
+  level: 'info',
+  message: 'POST /api/cars/6141f4bc4651d008ac222e51/maintenance'
+}
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
