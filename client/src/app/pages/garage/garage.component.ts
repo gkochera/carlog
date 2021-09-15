@@ -6,11 +6,11 @@ import { Subscription } from 'rxjs';
 
 
 @Component({
-  selector: 'app-cars',
-  templateUrl: './cars.component.html',
-  styleUrls: ['./cars.component.css']
+  selector: 'app-garage',
+  templateUrl: './garage.component.html',
+  styleUrls: ['./garage.component.css']
 })
-export class CarsComponent implements OnInit {
+export class GarageComponent implements OnInit {
     showAddCar!: boolean;
     subscription!: Subscription;
     cars: Car[] = [];

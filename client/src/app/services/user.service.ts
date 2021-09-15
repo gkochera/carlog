@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { catchError } from 'rxjs/operators'
 import { Observable, of, throwError } from 'rxjs';
 import { User } from '../User';
-import { CarComponent } from '../pages/cars/car/car.component';
+import { CarComponent } from '../pages/garage/car/car.component';
 
 const httpOptions = {
   headers: new HttpHeaders({

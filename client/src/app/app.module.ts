@@ -7,9 +7,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
-import { CarsComponent } from './pages/cars/cars.component';
-import { SingleCarComponent } from './pages/cars/single-car/single-car.component';
-import { AddCarComponent } from './pages/cars/add-car/add-car.component';
+import { GarageComponent } from './pages/garage/garage.component';
+import { SingleCarComponent } from './pages/garage/single-car/single-car.component';
+import { AddCarComponent } from './pages/garage/add-car/add-car.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -20,9 +20,9 @@ import { UsersComponent } from './pages/users/users.component';
 import { AddUserComponent } from './pages/users/add-user/add-user.component';
 import { UserDisplayComponent } from './pages/users/user-display/user-display.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CarFunctionComponent } from './pages/cars/single-car/car-function/car-function.component';
+import { CarFunctionComponent } from './pages/garage/single-car/car-function/car-function.component';
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
-import { CarComponent } from './pages/cars/car/car.component';
+import { CarComponent } from './pages/garage/car/car.component';
 import { AddMaintenanceComponent } from './pages/maintenance/add-maintenance/add-maintenance.component';
 
 const appRoutes: Routes = [
@@ -33,7 +33,7 @@ const appRoutes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        component: CarsComponent
+        component: GarageComponent
       },
       {
         path: ':carid',
@@ -59,7 +59,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ButtonComponent,
-    CarsComponent,
+    GarageComponent,
     SingleCarComponent,
     AddCarComponent,
     AboutComponent,
