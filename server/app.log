@@ -1586,3 +1586,80 @@
 }
 { level: 'info', message: 'GET /api/cars' }
 { level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/cars' }
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613393cc71e460ff75b3b0ad/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613393cc71e460ff75b3b0ad/cars'
+}
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'GET /api/parts' }
+{ level: 'info', message: 'GET /api/users' }
+{
+  level: 'info',
+  message: 'DELETE /api/users/613eb7eccd3a8dd3cd619a3d'
+}
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613393cc71e460ff75b3b0ad/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613393cc71e460ff75b3b0ad/cars'
+}
+{
+  message: 'Retrieved 0 car(s) for user with ID 613393cc71e460ff75b3b0ad.',
+  level: 'info'
+}
+{ level: 'info', message: 'POST /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613393cc71e460ff75b3b0ad/cars'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613393cc71e460ff75b3b0ad/cars'
+}
+{
+  message: 'Retrieved 1 car(s) for user with ID 613393cc71e460ff75b3b0ad.',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/cars/614294aae669ebaf46cfc99e' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/613393cc71e460ff75b3b0ad/cars'
+}
+{
+  message: 'Retrieved 1 car(s) for user with ID 613393cc71e460ff75b3b0ad.',
+  level: 'info'
+}
+{
+  level: 'info',
+  message: 'POST /api/cars/614294aae669ebaf46cfc99e/maintenance'
+}

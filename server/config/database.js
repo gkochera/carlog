@@ -1,22 +1,16 @@
 var MongoClient = require('mongodb').MongoClient;
 const dbConfig = require('./database.config')
 
-let _db;
+var _db
 
 module.exports = {
-    connect: function (callback) {
-        MongoClient.connect( dbConfig.url,  { useNewUrlParser: true, useUnifiedTopology: true }, function( err, client ) {
+    connect: function(callback) {
+        MongoClient.connect(dbConfig.url, {useNewUrlParser: true, useUnifiedTopology: true}, (err, client) => {
             _db = client.db('carlog');
-            if (err) {
-                return callback(err);
-            } else {
-                return callback("Database successfully connected...")
-            }
-          } );
-        },
-    getDb: function () 
-    {   
-        console.log(_db);
-        return _db
+            return callback(err);
+        })
+    },
+    getDb: function(){
+        return _db;
     }
 }
