@@ -3,10 +3,14 @@ const app = express();
 
 const cors = require('cors')
 const database = require('./config/database')
+const jwt = require('./helpers/jwt')
 
 const logger = require('./config/logger')
 
-// CORS - Because we are using two different ports, we nee to configure CORS.
+/*
+    CORS
+    Because we are using two different ports, we nee to configure CORS.
+*/
 app.use(cors({
     origin: true, // "true" will copy the domain of the request back
                   // to the reply. If you need more control than this
@@ -20,6 +24,13 @@ app.use(cors({
     methods: 'POST,GET,PUT,OPTIONS,DELETE' // Make sure you're not blocking
                                            // pre-flight OPTIONS requests
 }));
+
+/*
+    JWT SETUP
+    Needed for authentication to work
+*/
+
+app.use(jwt())
 
 /*
     EXPRESS CONFIGURATION

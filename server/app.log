@@ -1663,3 +1663,81 @@
   level: 'info',
   message: 'POST /api/cars/614294aae669ebaf46cfc99e/maintenance'
 }
+{ level: 'info', message: 'GET /api/users' }
+{
+  level: 'info',
+  message: 'DELETE /api/users/613e9f9895302ca4cbb913b2'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea14995302ca4cbb913b3'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea2d195302ca4cbb913b4'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea2d495302ca4cbb913b5'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea31c5788afac83927f0c'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea3aa5788afac83927f0d'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea5815788afac83927f0e'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea6275788afac83927f0f'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613ea6605788afac83927f10'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613eac895788afac83927f11'
+}
+{
+  level: 'info',
+  message: 'DELETE /api/users/613eb3a56ec06fc78a7f48c2'
+}
+{ level: 'info', message: 'POST /api/users' }
+{
+  message: 'Created user with ID: 61429516e0fcafb038c2b884 (LT1FirebirdSLP@gmail.com)',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/61429516e0fcafb038c2b884/cars'
+}
+{
+  message: 'Retrieved 0 car(s) for user with ID 61429516e0fcafb038c2b884.',
+  level: 'info'
+}
+{ level: 'info', message: 'POST /api/cars' }
+{ level: 'info', message: 'GET /api/sitedata/cars' }
+{
+  level: 'info',
+  message: 'GET /api/users/61429516e0fcafb038c2b884/cars'
+}
+{
+  message: 'Retrieved 1 car(s) for user with ID 61429516e0fcafb038c2b884.',
+  level: 'info'
+}
+{ level: 'info', message: 'GET /api/users' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
+{ level: 'info', message: 'POST /api/login' }
