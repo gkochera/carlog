@@ -5,6 +5,6 @@ module.exports = jwt;
 
 function jwt() {
     return expressJwt({ secret, algorithms: ['HS256'] }).unless({
-        path: ['/login']
+        path: ['/api/login']
     });
 }
