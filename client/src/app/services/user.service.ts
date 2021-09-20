@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
-import { catchError } from 'rxjs/operators'
+import { catchError, map } from 'rxjs/operators'
 import { Observable, of, throwError } from 'rxjs';
 import { User } from '../User';
 import { CarComponent } from '../pages/garage/car/car.component';
@@ -39,17 +39,18 @@ export class UserService {
       return result;
     }
 
-    loginUser(email: string): Observable<User> {
+    loginUser(email: string): Observable<any> {
       let body = {email}
-      let result = this.http.post<User>('http://localhost:5000/api/login', body, httpOptions)
+      let result = this.http.post<any>('http://localhost:5000/api/login', body, httpOptions)
       .pipe(
         catchError((err) => {
           return throwError(err);
         })
-
+        ,map((user) => {
+          localStorage.setItem('carlog-jwt', JSON.stringify(user.token));
+          localStorage.setItem('carlog-user', JSON.stringify(user.data.email));
+        })
       )
-      console.log(result)
       return result;
-    }
-
+  }
 }
